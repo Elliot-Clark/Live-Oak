@@ -1,3 +1,94 @@
 html, body {
   margin: 0;
 }
+
+header {
+  width: 100%;
+  background-color: grey;
+  height: 3rem;
+  text-align: center;
+}
+
+header li {
+  display: inline;
+  padding-right: 90px;
+}
+
+header ul {
+  margin: 0;
+  padding-top: 1rem;
+}
+
+.block-container {
+  width: 80%;
+  padding: 1px 10%;
+  background-color: #E2E2E2;
+}
+
+.title-block h1 {
+  text-align: center;
+  font-size: 4rem;
+  font-family: 'Berkshire Swash', cursive;
+  border: solid green;
+  border-width: 0 0 5px 0;
+  margin-top: 1rem;
+}
+
+.first-block {
+  text-align: center;
+}
+
+.first-block p {
+}
+
+#img1 {
+  width: 30%;
+  margin-right: 2rem;
+  box-shadow: 8px -3px 20px 3px #888;
+}
+
+#img2 {
+  width: 40%;
+  box-shadow: 8px -3px 20px 3px #888;
+  position: relative;
+  bottom: 8rem;
+}
+
+.second-block {
+  background-color: white;
+}
+
+.schedule {
+  font-size: 2rem;
+  font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+  text-align: center;
+  position: relative;
+}
+
+.schedule ol:nth-child(4n+1) {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+iframe{
+  width: 80%;
+  height: 300px;
+  margin-bottom: 10%;
+}
+
+.map-one {
+  width: 50%;
+  display: inline-block;
+  position: relative;
+  left: 15vw;
+}
+
+.map-two {
+  display: inline-block;
+  position: relative;
+  right: 15vw;
+}
+
+.third-block {
+  background-color: #E2E2E2;
+}
