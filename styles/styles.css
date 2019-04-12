@@ -5,7 +5,7 @@ html, body {
 header {
   width: 100%;
   background-color: grey;
-  height: 3rem;
+  height: 1.5rem;
   text-align: center;
 }
 
@@ -16,7 +16,7 @@ header li {
 
 header ul {
   margin: 0;
-  padding-top: 1rem;
+  padding-top: .5rem;
 }
 
 .block-container {
@@ -36,26 +36,70 @@ header ul {
 
 .first-block {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
 }
 
-.first-block p {
+.first-block span p {
+  font-size: 2.3rem;
+  font-weight: bold;
+  font-family: 'Berkshire Swash', cursive;
+  font-style: italic;
 }
 
 #img1 {
-  width: 30%;
+  width: 400px;
   margin-right: 2rem;
   box-shadow: 8px -3px 20px 3px #888;
 }
 
 #img2 {
-  width: 40%;
   box-shadow: 8px -3px 20px 3px #888;
+  height: 80%;
+}
+
+.info {
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.info-container {
+  font-size: 1.8rem;
+  width: 50%;
+  margin: auto 0;
+}
+
+.info-text {
   position: relative;
-  bottom: 8rem;
+  display: none;
+  animation-name: scroll;
+  animation-duration: 1.2s;
+}
+
+@keyframes scroll {
+  from {opacity: 0;}
+  to {opacity: 1;}
+  from {left: 50px;}
+  to {left: 0px;}
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+#img3 {
+  margin-top: 30px;
+  width: 40%;
+  height: 40%;
+  box-shadow: 8px -3px 20px 3px #888;
 }
 
 .second-block {
-  background-color: white;
+  background-color: #E2E2E2;
+  padding-bottom: 20px;
 }
 
 .schedule {
@@ -71,24 +115,70 @@ header ul {
 }
 
 iframe{
-  width: 80%;
-  height: 300px;
-  margin-bottom: 10%;
+  width: 30vw;
+  height: 350px;
+  padding-bottom: 20px;
 }
 
-.map-one {
+.map {
+  display: flex;
+  justify-content: space-around;
+}
+
+.map:nth-child(1) {
+  padding-top: 30px;
+  border: solid black;
+  border-width: 0 0 1px 0;
+}
+
+.map span {
   width: 50%;
-  display: inline-block;
-  position: relative;
-  left: 15vw;
-}
-
-.map-two {
-  display: inline-block;
-  position: relative;
-  right: 15vw;
 }
 
 .third-block {
-  background-color: #E2E2E2;
+  background-color: white;
+}
+
+.downloads {
+  width: 80%;
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.downloads a {
+  padding: 5px;
+  border-radius: 14px;
+  border: solid black 1px;
+  text-align: center;
+  cursor: pointer;
+  color: inherit;
+}
+
+.downloads a:hover {
+  animation-name: hover;
+  animation-duration: .3s;
+  border-color: green;
+  border-radius: 0px;
+  background-color: white;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+@keyframes hover {
+  from {background-color: none;}
+  to {background-color: white;}
+  from {border-radius: 14px;}
+  to {border-radius: 0px;}
+  from {transform: scale(1);}
+  to {transform: scale(1.05);}
+}
+
+.third-block p {
+  font-size: 1.3rem;
+  width: 40%;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 50px;
 }
