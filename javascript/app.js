@@ -2,7 +2,7 @@ let test = document.querySelector('.schedule');
 
 window.onscroll = function() {scrollDown()};
 
-function scrollDown() {
+const scrollDown = () => {
   if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
     document.getElementsByClassName('info-text')[0].style.display = 'block';
   }
@@ -26,4 +26,6 @@ let d = new Date();
 let currentMonth = month[d.getMonth()];
 let currentYear = new Date().getFullYear();
 
+document.getElementsByClassName('calendar')[0].href = "PDFs/"+currentMonth+"-"+currentYear+"-Calendar.pdf";
+document.getElementsByClassName('notes')[0].href = "PDFs/Center-Notes-"+currentMonth+"-"+currentYear+".pdf";
 
